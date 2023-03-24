@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4B4B4B;
+    color: #fff;
+    box-shadow: 0px 3px 8px 0 #525252c7;
+    position: relative;
+}
+
+.logo {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+left: 50%;
+transform: translate(-50%);
+}
+
+.allList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menuOption {
+    margin-left: 2.5rem;
+    text-decoration: none;
+    list-style: none;
+}
+
+.btn1 {
+    margin-right: 1rem;
+    padding: .7rem .1rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background: linear-gradient(-90deg, #ddb916, #ec9900);
+    color: #4B4B4B;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn1:active {
+    transform: translateY(1px);
+}
+
+.emailId {
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: .5rem;
+}
+
+.avatarIcon {
+    font-size: 2rem;
+    margin-right: 0;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2.5rem;
+}
+
+.logoutIcon {
+    color: #fff;
+    font-size: 1.2rem;
+
+}

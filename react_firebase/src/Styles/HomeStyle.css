@@ -1,0 +1,46 @@
+.mainContainer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-90deg, #ddb916, #ec9900);
+    height: 94vh;
+    text-align: center;
+}
+
+.workingPlace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    width: 90%;
+}
+
+.inputSide {
+    width: 50%;
+    height: inherit;
+    padding: .5rem 1rem;
+    outline: none;
+    background: #282828;
+    border-radius: 1rem 0 0 1rem;
+    font-size: 1.1rem;
+    caret-color: #ec9900;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.inputSide:focus::placeholder {
+    color: #fff;
+}
+
+.outputSide {
+    width: 50%;
+    border-radius: 0 1rem 1rem 0;
+    height: inherit;
+    display: flex;
+    justify-content: flex-start;
+    padding: .5rem 1rem;
+    background: #fff;
+    font-size: 1.1rem;
+    border: 3px solid #282828;
+}

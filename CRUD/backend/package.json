@@ -1,0 +1,27 @@
+{
+  "name": "crud-app",
+  "version": "1.0.0",
+  "description": "CRUD app using MERN-Stack",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "CRUD",
+    "MERN"
+  ],
+  "author": "King",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongodb": "^4.12.0",
+    "mongoose": "^6.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

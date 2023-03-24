@@ -1,0 +1,121 @@
+.mainContainer2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-90deg, #ddb916, #ec9900);
+    height: 100vh;
+    text-align: center;
+}
+.container2 {
+    background: #4b4b4b;
+    color: #fff;
+    width: 40%;
+    height: 70%;
+    border-radius: 1rem;
+    box-shadow: 0px 7px 12px 0 #3f3f3fc7;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Title {
+    text-transform: uppercase;
+    margin-top: 1rem;
+    width: 20%;
+}
+
+.Title::after {
+    content: '';
+    display: block;
+    height: 5px;
+    border-radius: 1rem;
+    background: #ffa500;
+    outline: none;
+    margin-top: .3rem;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.ip {
+    margin: .5rem 0;
+    width: 60%;
+    padding: 1rem .8rem;
+    border: none;
+    outline: none;
+    border-radius: .4rem;
+    background: #2c2c2c;
+    font-size: 1.1rem;
+    color: #fff;
+    caret-color: #ffa500;
+    box-shadow: 0px 2px 3px 0 #333333d5;
+}
+
+.ip:focus {
+    border: 2px solid #ffaa00;
+}
+
+.ip:focus::placeholder{
+    color: #fff;
+}
+
+.forgetContainer {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 79%;
+}
+
+.fpLink {
+    color: #ffa500;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.btnContainer {
+    margin-top: 5rem;
+}
+
+.btn {
+    padding: .7rem 6rem;
+    border-radius: .2rem;
+    border: none;
+    outline: none;
+    background: #ffaa00;
+    color: #4b4b4b;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 1px 3px 8px 0 #333333e3;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: translateY(3px);
+}
+
+.question {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 35%;
+    cursor: default;
+}
+
+.suLink {
+    color: #ffa500;
+    text-decoration: none;
+    text-transform: capitalize;
+}

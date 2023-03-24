@@ -1,0 +1,3 @@
+DB_Pwd = "v7bpAI5zKceRow4H"
+email = "camavot306@loongwin.com"
+pwd = "147852369@King"

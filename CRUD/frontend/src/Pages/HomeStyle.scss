@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f7f7ff;
+
+    .heading {
+        color: #888888d8;
+        padding: 3rem;
+        font-size: 3rem;
+        cursor: default;
+    }
+
+    .container {
+        height: 80vh;
+        width: 60vw;
+
+
+        .btnContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .addBtn {
+                background: #a0a0ff;
+                padding: .8rem 2rem;
+                border: none;
+                outline: none;
+                color: #fff;
+                font-size: 16px;
+                border-radius: 4px;
+                box-shadow: 0px 3px 8px 0 #d4d4d4;
+                transition: all .3s ease-in-out;
+                cursor: pointer;
+            }
+
+            .addBtn:hover {
+                transform: scale(1.1);
+            }
+
+            .filterInput {
+                padding: .8rem 1rem;
+                background: #b8b8b8;
+                border: none;
+                outline: none;
+                border-radius: 4px;
+            }
+        }
+
+        .taskContainer {
+            background: #bbbbbb2d;
+            display: flex;
+            margin-top: 2rem;
+            height: 60%;
+            flex-direction: column;
+            align-items: center;
+
+            .task {
+                background: #fff;
+                margin: .7rem 0;
+                width: 95%;
+                border-radius: 3px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 15%;
+                padding: 0 .8rem;
+
+                .detailContainer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    
+                    .details {
+                        padding-left: 2rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        flex-direction: column;
+                    }
+                }
+
+                .taskHeading {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+
+                .dateTime {
+                    display: flex;
+                    justify-self: center;
+                    color: #1e1e1ed8;
+                    align-items: center;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+
+            .editBtns {
+                background: none;
+
+                .btns {
+                    margin-left: 1rem;
+                    padding: 6px 8px;
+                    font-size: 16px;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
