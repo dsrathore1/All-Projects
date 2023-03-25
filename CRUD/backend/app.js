@@ -4,6 +4,7 @@ import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
 import mainRoutes from './routes/routes.js';
 import connectDB from './Database/connectDB.js';
+import Models from "./models/models.js";
 
 dotenv.config({ path: 'config.env' });
 
@@ -16,8 +17,18 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(mainRoutes);
 
-app.get("/", (req, res) => {
-    res.send("<h1>Hello World</h1>");
+app.get("/", async (req, res) => {
+    const allDetails = await Models.find();
+    // res.json(allDetails);
+    res.send(`<h1>
+    ${allDetails.map((ele) => {
+        return (
+            `<br>My name is ${ele.name} ${ele.lastName},<br> email :- ${ele.email}<br> Num :- ${ele.mobNum}`
+        )
+    }
+    )
+        }
+    </h1>`)
 });
 
 connectDB();

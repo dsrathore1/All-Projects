@@ -29,3 +29,26 @@ export const postDetails = async (req, res) => {
         res.send("<h1>ERROR</h1>")
     }
 }
+
+export const updateDetail = async (req, res) => {
+    try {
+        const oneTask = await DB_MODEL.findOneAndUpdate(
+            req.body
+        );
+        res.send(oneTask);
+        console.log({ updated: oneTask });
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+export const deleteDetail = async (req, res) => {
+    try {
+        const deleteTask = await DB_MODEL.findByIdAndDelete({ "_id": req.params.newId });
+        res.json({ DeletedTask: deleteTask });
+        const allDetailAfterDelete = await DB_MODEL.find();
+        console.log({AfterDeleteDetails:allDetailAfterDelete});
+    } catch (error) {
+        console.log(error)
+    }
+}

@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const DB_SCHEMA = mongoose.Schema(
+const DB_SCHEMA = new mongoose.Schema(
     {
         name: {
             type: String,
@@ -16,11 +16,12 @@ const DB_SCHEMA = mongoose.Schema(
         },
         mobNum: {
             type: Number,
+            default: 9934955493,
             require: true
         }
     }
 );
 
-const DB_MODEL = mongoose.model("crudCollection", DB_SCHEMA);
+const DB_MODEL = new mongoose.model("crudCollection", DB_SCHEMA);
 
 export default DB_MODEL;
